@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is an end-to-end data analysis solution designed to extract critical business insights from Walmart sales data. We utilize Python for data processing and analysis, SQL for advanced querying, and structured problem-solving techniques to solve key business questions.
+This project is an end-to-end data analysis solution designed to extract delivery insights from Zomato an online food delivery firms data. We utilize Python for data processing and analysis, SQL for advanced querying, and structured problem-solving techniques to solve key business questions.
 
 ---
 ## Project Steps
@@ -23,12 +23,8 @@ This project is an end-to-end data analysis solution designed to extract critica
 ### 4. Data Cleaning
   - **Remove Dupplicates**- Identify and remove the duplicate entries to avoid uneven result.
   - **Handle Missing Values**- Drop rows and columns with missing values to avoid errors in result.
-  - **Fix Data Types**- Ensure all columns have consistent data types (e.g., dates as `datetime`, prices as `float`).
   - **Validation**: Check for any remaining inconsistencies and verify the cleaned data.
 
-### 5. Feature Engineering
-   - **Create New Columns**: Calculate the `Total Amount` for each transaction by multiplying `unit_price` by `quantity` and adding this as a new column.
-   - **Enhance Dataset**: Adding this calculated field will streamline further SQL analysis and aggregation tasks.
 
 ### 6. Load Data into `.csv` format and into MYSQL
   - **To CSV File**- Save the cleaned file into `.csv` format for any further use.
@@ -37,15 +33,14 @@ This project is an end-to-end data analysis solution designed to extract critica
 
 ### 7. SQL Analysis: Complex Queries and Business Problem Solving
   - **Business Problem-Solving**: Write and execute complex SQL queries to answer critical business questions, such as:
-    - Find different payment methods, number of transactions, and quantity sold by payment method.
-    - Identify the highest-rated category in each branch. Display the branch, category, and avg rating.
-    - Identify the busiest day for each branch based on the number of transactions.
-    - Calculate the total quantity of items sold per payment method.
-    - Determine the average, minimum, and maximum rating of categories for each city.
-    - Calculate the total profit for each category.
-    - Determine the most common payment method for each branch.
-    - Categorize sales into Morning, Afternoon, and Evening shifts.
-    - Identify the 5 branches with the highest revenue decrease ratio from last year to current year (e.g., 2022 to 2023).
+    - Check Cities with their Country Code.
+    - Get data of India.
+    - Get the data of Restaurant Name, City, Locality, Cuisines, Average Cost For_Two and Rating of India with Rating above 4.
+    - Get the data of Restaurant Name, City, Locality, Cuisines, Average Cost For_Two and Rating with Rating above 4.
+### 8. Conclusion
+  - We get that out of 9551 records, 8652 records are of India.
+  - Records of 615 on India have Rating above 4 with Sagar Gaire Fast Food Restaurant from Bopal have high rating with best prices for two.
+  - Out of total 9551 records, only 1114 Restaurant have rating above 4.
     
 
 
